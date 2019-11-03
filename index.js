@@ -53,6 +53,8 @@ function search(event) {
 function displayTemperature(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = `${Math.round(response.data.main.temp)}C`;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 let searchForm = document.querySelector("form");
