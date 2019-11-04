@@ -1,10 +1,3 @@
-function convert() {
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = 73;
-}
-let temperatureLink = document.querySelector("#fahrenheit");
-temperatureLink.addEventListener("click", convert);
-
 function formatDate1() {
   let now = new Date();
 
