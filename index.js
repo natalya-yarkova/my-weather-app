@@ -55,6 +55,8 @@ function displayTemperature(response) {
   temperature.innerHTML = `${Math.round(response.data.main.temp)}C`;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
 }
 
 let searchForm = document.querySelector("form");
